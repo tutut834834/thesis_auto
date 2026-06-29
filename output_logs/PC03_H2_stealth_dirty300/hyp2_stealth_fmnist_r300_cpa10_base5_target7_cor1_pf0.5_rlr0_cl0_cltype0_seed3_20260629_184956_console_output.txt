@@ -112,4 +112,298 @@ VERIFY_POISONING_END
         0.9790]) |
 | Poison Loss/Poison Acc: 1.714 / 0.109 |
 STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
-  0%|          | 1/300 [03:01<15:03:22, 181.28s/it]
+  0%|          | 1/300 [03:01<15:03:22, 181.28s/it]| Round: 2 |
+| Val_Loss/Val_Acc: 0.467 / 0.820 |
+| Val_Per_Class_Acc: tensor([0.8360, 0.9610, 0.5960, 0.8900, 0.8440, 0.9450, 0.3020, 0.9130, 0.9500,
+        0.9610]) |
+| Poison Loss/Poison Acc: 3.270 / 0.144 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  1%|          | 2/300 [07:12<18:26:01, 222.69s/it]| Round: 3 |
+| Val_Loss/Val_Acc: 0.388 / 0.859 |
+| Val_Per_Class_Acc: tensor([0.8280, 0.9630, 0.7270, 0.8720, 0.8230, 0.9680, 0.5570, 0.9430, 0.9620,
+        0.9450]) |
+| Poison Loss/Poison Acc: 2.990 / 0.205 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  1%|1         | 3/300 [11:23<19:24:31, 235.26s/it]| Round: 4 |
+| Val_Loss/Val_Acc: 0.357 / 0.868 |
+| Val_Per_Class_Acc: tensor([0.8200, 0.9670, 0.7540, 0.8780, 0.7930, 0.9700, 0.6360, 0.9440, 0.9610,
+        0.9530]) |
+| Poison Loss/Poison Acc: 2.613 / 0.257 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  1%|1         | 4/300 [15:36<19:56:07, 242.46s/it]| Round: 5 |
+| Val_Loss/Val_Acc: 0.330 / 0.880 |
+| Val_Per_Class_Acc: tensor([0.8710, 0.9690, 0.7750, 0.8820, 0.8340, 0.9710, 0.6170, 0.9630, 0.9700,
+        0.9520]) |
+| Poison Loss/Poison Acc: 1.792 / 0.404 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  2%|1         | 5/300 [19:48<20:09:30, 246.00s/it]| Round: 6 |
+| Val_Loss/Val_Acc: 0.310 / 0.887 |
+| Val_Per_Class_Acc: tensor([0.8510, 0.9700, 0.7880, 0.8890, 0.8490, 0.9790, 0.6590, 0.9610, 0.9730,
+        0.9560]) |
+| Poison Loss/Poison Acc: 1.585 / 0.469 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  2%|2         | 6/300 [24:02<20:17:36, 248.49s/it]| Round: 7 |
+| Val_Loss/Val_Acc: 0.297 / 0.892 |
+| Val_Per_Class_Acc: tensor([0.8740, 0.9690, 0.8160, 0.9090, 0.8540, 0.9710, 0.6320, 0.9700, 0.9740,
+        0.9530]) |
+| Poison Loss/Poison Acc: 0.932 / 0.639 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  2%|2         | 7/300 [28:15<20:20:30, 249.93s/it]| Round: 8 |
+| Val_Loss/Val_Acc: 0.285 / 0.897 |
+| Val_Per_Class_Acc: tensor([0.8560, 0.9700, 0.8200, 0.9080, 0.8590, 0.9720, 0.6790, 0.9680, 0.9740,
+        0.9600]) |
+| Poison Loss/Poison Acc: 0.720 / 0.702 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  3%|2         | 8/300 [32:26<20:18:15, 250.33s/it]| Round: 9 |
+| Val_Loss/Val_Acc: 0.274 / 0.900 |
+| Val_Per_Class_Acc: tensor([0.8750, 0.9730, 0.8220, 0.9040, 0.8730, 0.9770, 0.6770, 0.9630, 0.9730,
+        0.9630]) |
+| Poison Loss/Poison Acc: 0.499 / 0.781 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  3%|3         | 9/300 [36:38<20:16:25, 250.81s/it]| Round: 10 |
+| Val_Loss/Val_Acc: 0.270 / 0.903 |
+| Val_Per_Class_Acc: tensor([0.8280, 0.9730, 0.7890, 0.9110, 0.8960, 0.9770, 0.7460, 0.9770, 0.9740,
+        0.9550]) |
+| Poison Loss/Poison Acc: 0.406 / 0.833 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  3%|3         | 10/300 [40:52<20:17:31, 251.90s/it]| Round: 11 |
+| Val_Loss/Val_Acc: 0.261 / 0.907 |
+| Val_Per_Class_Acc: tensor([0.8640, 0.9750, 0.8200, 0.9190, 0.8840, 0.9800, 0.7160, 0.9720, 0.9760,
+        0.9600]) |
+| Poison Loss/Poison Acc: 0.231 / 0.913 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  4%|3         | 11/300 [45:03<20:11:42, 251.57s/it]| Round: 12 |
+| Val_Loss/Val_Acc: 0.251 / 0.910 |
+| Val_Per_Class_Acc: tensor([0.8620, 0.9750, 0.8430, 0.9240, 0.8840, 0.9800, 0.7230, 0.9770, 0.9760,
+        0.9560]) |
+| Poison Loss/Poison Acc: 0.158 / 0.942 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  4%|4         | 12/300 [49:13<20:05:34, 251.16s/it]| Round: 13 |
+| Val_Loss/Val_Acc: 0.251 / 0.911 |
+| Val_Per_Class_Acc: tensor([0.8830, 0.9780, 0.8190, 0.9250, 0.9110, 0.9830, 0.7070, 0.9790, 0.9750,
+        0.9540]) |
+| Poison Loss/Poison Acc: 0.126 / 0.957 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  4%|4         | 13/300 [53:24<20:00:35, 251.00s/it]| Round: 14 |
+| Val_Loss/Val_Acc: 0.244 / 0.913 |
+| Val_Per_Class_Acc: tensor([0.8620, 0.9760, 0.8280, 0.9220, 0.9160, 0.9840, 0.7340, 0.9740, 0.9740,
+        0.9580]) |
+| Poison Loss/Poison Acc: 0.145 / 0.948 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  5%|4         | 14/300 [57:36<19:57:58, 251.32s/it]| Round: 15 |
+| Val_Loss/Val_Acc: 0.237 / 0.912 |
+| Val_Per_Class_Acc: tensor([0.8880, 0.9780, 0.8550, 0.9260, 0.8900, 0.9850, 0.6910, 0.9800, 0.9750,
+        0.9560]) |
+| Poison Loss/Poison Acc: 0.056 / 0.983 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  5%|5         | 15/300 [1:01:50<19:57:18, 252.06s/it]| Round: 16 |
+| Val_Loss/Val_Acc: 0.236 / 0.915 |
+| Val_Per_Class_Acc: tensor([0.8730, 0.9790, 0.8140, 0.9210, 0.9110, 0.9830, 0.7510, 0.9750, 0.9800,
+        0.9590]) |
+| Poison Loss/Poison Acc: 0.051 / 0.984 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  5%|5         | 16/300 [1:06:02<19:53:49, 252.22s/it]| Round: 17 |
+| Val_Loss/Val_Acc: 0.231 / 0.916 |
+| Val_Per_Class_Acc: tensor([0.8720, 0.9810, 0.8510, 0.9240, 0.8950, 0.9830, 0.7380, 0.9820, 0.9810,
+        0.9540]) |
+| Poison Loss/Poison Acc: 0.060 / 0.982 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  6%|5         | 17/300 [1:10:14<19:49:03, 252.10s/it]| Round: 18 |
+| Val_Loss/Val_Acc: 0.233 / 0.914 |
+| Val_Per_Class_Acc: tensor([0.8290, 0.9780, 0.8300, 0.9190, 0.9140, 0.9830, 0.7730, 0.9830, 0.9770,
+        0.9520]) |
+| Poison Loss/Poison Acc: 0.042 / 0.986 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  6%|6         | 18/300 [1:14:26<19:44:07, 251.94s/it]| Round: 19 |
+| Val_Loss/Val_Acc: 0.228 / 0.917 |
+| Val_Per_Class_Acc: tensor([0.8610, 0.9790, 0.8490, 0.9250, 0.8900, 0.9840, 0.7640, 0.9810, 0.9790,
+        0.9590]) |
+| Poison Loss/Poison Acc: 0.026 / 0.991 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  6%|6         | 19/300 [1:18:36<19:37:52, 251.50s/it]| Round: 20 |
+| Val_Loss/Val_Acc: 0.225 / 0.919 |
+| Val_Per_Class_Acc: tensor([0.8860, 0.9800, 0.8660, 0.9320, 0.8630, 0.9860, 0.7600, 0.9730, 0.9770,
+        0.9660]) |
+| Poison Loss/Poison Acc: 0.038 / 0.988 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  7%|6         | 20/300 [1:22:48<19:34:11, 251.61s/it]| Round: 21 |
+| Val_Loss/Val_Acc: 0.222 / 0.919 |
+| Val_Per_Class_Acc: tensor([0.8860, 0.9800, 0.8510, 0.9290, 0.8990, 0.9870, 0.7370, 0.9820, 0.9780,
+        0.9580]) |
+| Poison Loss/Poison Acc: 0.025 / 0.992 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  7%|7         | 21/300 [1:26:59<19:28:43, 251.34s/it]| Round: 22 |
+| Val_Loss/Val_Acc: 0.223 / 0.919 |
+| Val_Per_Class_Acc: tensor([0.8830, 0.9790, 0.8580, 0.9240, 0.9110, 0.9810, 0.7430, 0.9850, 0.9770,
+        0.9540]) |
+| Poison Loss/Poison Acc: 0.019 / 0.995 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  7%|7         | 22/300 [1:31:08<19:21:09, 250.61s/it]| Round: 23 |
+| Val_Loss/Val_Acc: 0.216 / 0.923 |
+| Val_Per_Class_Acc: tensor([0.8740, 0.9810, 0.8760, 0.9300, 0.9060, 0.9860, 0.7590, 0.9830, 0.9790,
+        0.9590]) |
+| Poison Loss/Poison Acc: 0.020 / 0.994 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  8%|7         | 23/300 [1:35:19<19:18:07, 250.86s/it]| Round: 24 |
+| Val_Loss/Val_Acc: 0.217 / 0.923 |
+| Val_Per_Class_Acc: tensor([0.8810, 0.9840, 0.8570, 0.9290, 0.9240, 0.9840, 0.7500, 0.9820, 0.9770,
+        0.9600]) |
+| Poison Loss/Poison Acc: 0.016 / 0.996 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  8%|8         | 24/300 [1:39:31<19:15:08, 251.12s/it]| Round: 25 |
+| Val_Loss/Val_Acc: 0.215 / 0.922 |
+| Val_Per_Class_Acc: tensor([0.8550, 0.9820, 0.8590, 0.9330, 0.9070, 0.9830, 0.7810, 0.9860, 0.9800,
+        0.9590]) |
+| Poison Loss/Poison Acc: 0.009 / 0.998 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  8%|8         | 25/300 [1:43:42<19:11:28, 251.23s/it]| Round: 26 |
+| Val_Loss/Val_Acc: 0.215 / 0.924 |
+| Val_Per_Class_Acc: tensor([0.8800, 0.9810, 0.8490, 0.9370, 0.9140, 0.9830, 0.7690, 0.9840, 0.9820,
+        0.9570]) |
+| Poison Loss/Poison Acc: 0.004 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  9%|8         | 26/300 [1:47:54<19:08:11, 251.43s/it]| Round: 27 |
+| Val_Loss/Val_Acc: 0.214 / 0.922 |
+| Val_Per_Class_Acc: tensor([0.8620, 0.9810, 0.8600, 0.9310, 0.9110, 0.9830, 0.7760, 0.9880, 0.9790,
+        0.9530]) |
+| Poison Loss/Poison Acc: 0.003 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  9%|9         | 27/300 [1:52:21<19:25:13, 256.09s/it]| Round: 28 |
+| Val_Loss/Val_Acc: 0.212 / 0.926 |
+| Val_Per_Class_Acc: tensor([0.8740, 0.9820, 0.8610, 0.9370, 0.9130, 0.9880, 0.7780, 0.9760, 0.9780,
+        0.9690]) |
+| Poison Loss/Poison Acc: 0.005 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  9%|9         | 28/300 [1:56:53<19:42:10, 260.77s/it]| Round: 29 |
+| Val_Loss/Val_Acc: 0.213 / 0.923 |
+| Val_Per_Class_Acc: tensor([0.8810, 0.9830, 0.8570, 0.9360, 0.9000, 0.9850, 0.7640, 0.9810, 0.9790,
+        0.9650]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 10%|9         | 29/300 [2:01:25<19:53:39, 264.28s/it]| Round: 30 |
+| Val_Loss/Val_Acc: 0.212 / 0.924 |
+| Val_Per_Class_Acc: tensor([0.8820, 0.9810, 0.8550, 0.9280, 0.9230, 0.9850, 0.7630, 0.9710, 0.9820,
+        0.9720]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 10%|#         | 30/300 [2:05:58<20:00:30, 266.78s/it]| Round: 31 |
+| Val_Loss/Val_Acc: 0.211 / 0.925 |
+| Val_Per_Class_Acc: tensor([0.8730, 0.9840, 0.8590, 0.9270, 0.9120, 0.9890, 0.7830, 0.9850, 0.9780,
+        0.9580]) |
+| Poison Loss/Poison Acc: 0.004 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 10%|#         | 31/300 [2:10:30<20:03:24, 268.42s/it]| Round: 32 |
+| Val_Loss/Val_Acc: 0.209 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8820, 0.9850, 0.8700, 0.9290, 0.9160, 0.9860, 0.7810, 0.9790, 0.9770,
+        0.9640]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 11%|#         | 32/300 [2:15:05<20:07:09, 270.26s/it]| Round: 33 |
+| Val_Loss/Val_Acc: 0.208 / 0.924 |
+| Val_Per_Class_Acc: tensor([0.8870, 0.9850, 0.8650, 0.9300, 0.8910, 0.9860, 0.7780, 0.9850, 0.9770,
+        0.9610]) |
+| Poison Loss/Poison Acc: 0.001 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 11%|#1        | 33/300 [2:19:36<20:04:47, 270.74s/it]| Round: 34 |
+| Val_Loss/Val_Acc: 0.209 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8760, 0.9830, 0.8730, 0.9320, 0.9170, 0.9880, 0.7740, 0.9840, 0.9790,
+        0.9600]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 11%|#1        | 34/300 [2:24:08<20:01:06, 270.93s/it]| Round: 35 |
+| Val_Loss/Val_Acc: 0.210 / 0.926 |
+| Val_Per_Class_Acc: tensor([0.8610, 0.9820, 0.8610, 0.9360, 0.9250, 0.9880, 0.7840, 0.9850, 0.9790,
+        0.9590]) |
+| Poison Loss/Poison Acc: 0.001 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 12%|#1        | 35/300 [2:28:41<19:59:13, 271.52s/it]| Round: 36 |
+| Val_Loss/Val_Acc: 0.206 / 0.926 |
+| Val_Per_Class_Acc: tensor([0.8800, 0.9830, 0.8660, 0.9280, 0.9150, 0.9860, 0.7790, 0.9820, 0.9770,
+        0.9610]) |
+| Poison Loss/Poison Acc: 0.001 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 12%|#2        | 36/300 [2:33:13<19:55:49, 271.78s/it]| Round: 37 |
+| Val_Loss/Val_Acc: 0.206 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8840, 0.9830, 0.8580, 0.9360, 0.9210, 0.9860, 0.7850, 0.9810, 0.9770,
+        0.9620]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 12%|#2        | 37/300 [2:37:45<19:51:55, 271.92s/it]| Round: 38 |
+| Val_Loss/Val_Acc: 0.207 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8650, 0.9830, 0.8710, 0.9290, 0.9140, 0.9880, 0.7970, 0.9870, 0.9790,
+        0.9620]) |
+| Poison Loss/Poison Acc: 0.003 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 13%|#2        | 38/300 [2:43:09<20:55:40, 287.56s/it]| Round: 39 |
+| Val_Loss/Val_Acc: 0.209 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8770, 0.9820, 0.8510, 0.9390, 0.9300, 0.9890, 0.7820, 0.9850, 0.9810,
+        0.9640]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 13%|#3        | 39/300 [2:47:41<20:30:14, 282.81s/it]| Round: 40 |
+| Val_Loss/Val_Acc: 0.205 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8840, 0.9830, 0.8690, 0.9320, 0.9340, 0.9880, 0.7580, 0.9840, 0.9810,
+        0.9630]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 13%|#3        | 40/300 [2:52:15<20:13:50, 280.12s/it]| Round: 41 |
+| Val_Loss/Val_Acc: 0.207 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8800, 0.9840, 0.8630, 0.9260, 0.9330, 0.9890, 0.7800, 0.9830, 0.9760,
+        0.9660]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 14%|#3        | 41/300 [2:56:48<20:00:36, 278.13s/it]| Round: 42 |
+| Val_Loss/Val_Acc: 0.207 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8850, 0.9820, 0.8550, 0.9240, 0.9220, 0.9870, 0.7910, 0.9880, 0.9810,
+        0.9600]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 14%|#4        | 42/300 [3:01:21<19:49:13, 276.56s/it]| Round: 43 |
+| Val_Loss/Val_Acc: 0.204 / 0.930 |
+| Val_Per_Class_Acc: tensor([0.8880, 0.9830, 0.8670, 0.9340, 0.9070, 0.9920, 0.7940, 0.9860, 0.9820,
+        0.9670]) |
+| Poison Loss/Poison Acc: 0.002 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 14%|#4        | 43/300 [3:05:55<19:40:48, 275.68s/it]| Round: 44 |
+| Val_Loss/Val_Acc: 0.206 / 0.930 |
+| Val_Per_Class_Acc: tensor([0.8630, 0.9830, 0.8630, 0.9360, 0.9340, 0.9860, 0.8040, 0.9850, 0.9790,
+        0.9690]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 15%|#4        | 44/300 [3:10:28<19:32:51, 274.89s/it]| Round: 45 |
+| Val_Loss/Val_Acc: 0.203 / 0.929 |
+| Val_Per_Class_Acc: tensor([0.8880, 0.9830, 0.8710, 0.9330, 0.9230, 0.9890, 0.7820, 0.9860, 0.9790,
+        0.9580]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 15%|#5        | 45/300 [3:15:00<19:24:57, 274.11s/it]| Round: 46 |
+| Val_Loss/Val_Acc: 0.208 / 0.927 |
+| Val_Per_Class_Acc: tensor([0.8770, 0.9830, 0.8510, 0.9230, 0.9230, 0.9900, 0.7920, 0.9810, 0.9810,
+        0.9690]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 15%|#5        | 46/300 [3:19:34<19:19:27, 273.89s/it]| Round: 47 |
+| Val_Loss/Val_Acc: 0.205 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8850, 0.9830, 0.8680, 0.9180, 0.9270, 0.9860, 0.7800, 0.9870, 0.9770,
+        0.9660]) |
+| Poison Loss/Poison Acc: 0.000 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 16%|#5        | 47/300 [3:24:07<19:13:38, 273.59s/it]| Round: 48 |
+| Val_Loss/Val_Acc: 0.205 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8770, 0.9820, 0.8650, 0.9350, 0.9270, 0.9870, 0.7720, 0.9850, 0.9780,
+        0.9680]) |
+| Poison Loss/Poison Acc: 0.000 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 16%|#6        | 48/300 [3:28:39<19:07:29, 273.21s/it]| Round: 49 |
+| Val_Loss/Val_Acc: 0.203 / 0.929 |
+| Val_Per_Class_Acc: tensor([0.8720, 0.9820, 0.8680, 0.9360, 0.9140, 0.9880, 0.7980, 0.9870, 0.9790,
+        0.9650]) |
+| Poison Loss/Poison Acc: 0.001 / 1.000 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 16%|#6        | 49/300 [3:33:13<19:03:55, 273.45s/it]| Round: 50 |
+| Val_Loss/Val_Acc: 0.207 / 0.928 |
+| Val_Per_Class_Acc: tensor([0.8750, 0.9830, 0.8710, 0.9270, 0.9220, 0.9890, 0.7890, 0.9810, 0.9810,
+        0.9640]) |
+| Poison Loss/Poison Acc: 0.001 / 0.999 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+ 17%|#6        | 50/300 [3:37:49<19:02:24, 274.18s/it]

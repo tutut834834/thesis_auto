@@ -1,0 +1,39 @@
+
+==========================================================================================
+TEMPORARY THESIS CHECKPOINT
+==========================================================================================
+PC: PC01
+Experiment: H1_noniid_dirty
+Round: 50 / 300
+Data: fmnist
+Seed: 1
+Num agents: 10
+Agent fraction: 1.0
+Num corrupt: 1
+Poison fraction: 0.5
+Base class: 0
+Target class: 1
+Pattern type: plus
+Class per agent: 2
+Clean label: 0
+Clean label type: 0
+Clean label PGD: 0
+RobustLR threshold: 0
+Clip: 0.0
+Noise: 0.0
+Cuckoo: 0
+Cuckoo variant: v2
+Cuckoo lambda: 1.5
+Cuckoo hatch round: 50
+Cuckoo warmup rounds: 25
+------------------------------------------------------------------------------------------
+Val Loss: 0.647081
+Val Acc: 0.760000
+Val Per Class Acc: tensor([0.6450, 0.9580, 0.2240, 0.8370, 0.9880, 0.9950, 0.2680, 0.8630, 0.9380,
+        0.8840])
+Poison Loss: 0.126757
+Poison Acc: 0.952000
+------------------------------------------------------------------------------------------
+Full log path: output_logs\PC01_H1_noniid_dirty_r300_s50_seed1_182339_console_output.txt
+Summary path: output_logs\PC01_H1_noniid_dirty_checkpoint_summary.txt
+==========================================================================================

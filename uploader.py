@@ -1,5 +1,9 @@
 from pathlib import Path
 
+# =========================
+# PC6 H3 DIRTY AUTOPUSH PATCH
+# =========================
+
 # -------------------------
 # Patch options.py
 # -------------------------
@@ -14,14 +18,18 @@ if "--github_autopush" not in s:
     parser.add_argument('--github_every', type=int, default=50,
                         help="auto-push every N rounds")
 
-    parser.add_argument('--github_branch', type=str, default='pc5-h3-dirty',
+    parser.add_argument('--github_branch', type=str, default='pc6-h3-dirty',
                         help="GitHub branch to push to")
 
-    parser.add_argument('--github_message_prefix', type=str, default='PC5 H3 dirty auto upload',
+    parser.add_argument('--github_message_prefix', type=str, default='PC6 H3 dirty auto upload',
                         help="commit message prefix for auto GitHub upload")
 '''
     s = s.replace("    args = parser.parse_args()", insert + "\n    args = parser.parse_args()")
     opt.write_text(s, encoding="utf-8")
+    print("PATCHED options.py")
+else:
+    print("options.py already has GitHub args")
+
 
 # -------------------------
 # Patch federated.py
@@ -31,17 +39,25 @@ s = fed.read_text(encoding="utf-8")
 
 if "import subprocess" not in s:
     s = s.replace("import random", "import random\nimport subprocess")
+    print("PATCHED import subprocess")
+else:
+    print("federated.py already has subprocess import")
+
 
 if "def github_autopush" not in s:
     marker = "class TeeLogger:"
     func = '''
 def github_autopush(args, rnd, txt_log_path):
     """
-    Auto-commit and push logs to GitHub every N rounds.
+    PC6 auto-commit and push logs to GitHub every N rounds.
     This uploads output_logs and logs while the experiment is still running.
     """
     if not hasattr(args, "github_autopush") or args.github_autopush != 1:
         return
+
+    if not hasattr(args, "github_every"):
+        return
+
     if rnd % args.github_every != 0:
         return
 
@@ -54,7 +70,7 @@ def github_autopush(args, rnd, txt_log_path):
         subprocess.run(["git", "add", "output_logs", "logs"], check=False)
 
         msg = f"{args.github_message_prefix} round {rnd}"
-        commit_result = subprocess.run(["git", "commit", "-m", msg], check=False)
+        subprocess.run(["git", "commit", "-m", msg], check=False)
 
         subprocess.run(["git", "push", "origin", args.github_branch], check=False)
 
@@ -66,16 +82,25 @@ def github_autopush(args, rnd, txt_log_path):
 
 '''
     s = s.replace(marker, func + marker)
+    print("PATCHED github_autopush function")
+else:
+    print("federated.py already has github_autopush function")
+
 
 if "github_autopush(args, rnd, txt_log_path)" not in s:
     target = "                print(\"POISON_FRACTION_SENSITIVITY_METRICS_NOTE: compare Poison Acc, Val_Acc, and labels_changed across pf=0.05,0.10,0.25,0.50.\")\n                txt_log_file.flush()\n"
     replacement = target + "\n        github_autopush(args, rnd, txt_log_path)\n"
+
     if target in s:
         s = s.replace(target, replacement, 1)
+        print("PATCHED github_autopush call after H3 metrics")
     else:
-        # fallback: add after every round flush
         s = s.replace("        txt_log_file.flush()\n", "        txt_log_file.flush()\n\n        github_autopush(args, rnd, txt_log_path)\n", 1)
+        print("PATCHED github_autopush call after flush fallback")
+else:
+    print("federated.py already calls github_autopush")
+
 
 fed.write_text(s, encoding="utf-8")
 
-print("PATCH_DONE_PC5_AUTOPUSH")
+print("PATCH_DONE_PC6_AUTOPUSH")

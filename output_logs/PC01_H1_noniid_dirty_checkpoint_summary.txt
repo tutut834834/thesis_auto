@@ -76,3 +76,42 @@ Poison Acc: 0.961000
 Full log path: output_logs\PC01_H1_noniid_dirty_r300_s50_seed1_182339_console_output.txt
 Summary path: output_logs\PC01_H1_noniid_dirty_checkpoint_summary.txt
 ==========================================================================================
+
+==========================================================================================
+TEMPORARY THESIS CHECKPOINT
+==========================================================================================
+PC: PC01
+Experiment: H1_noniid_dirty
+Round: 150 / 300
+Data: fmnist
+Seed: 1
+Num agents: 10
+Agent fraction: 1.0
+Num corrupt: 1
+Poison fraction: 0.5
+Base class: 0
+Target class: 1
+Pattern type: plus
+Class per agent: 2
+Clean label: 0
+Clean label type: 0
+Clean label PGD: 0
+RobustLR threshold: 0
+Clip: 0.0
+Noise: 0.0
+Cuckoo: 0
+Cuckoo variant: v2
+Cuckoo lambda: 1.5
+Cuckoo hatch round: 50
+Cuckoo warmup rounds: 25
+------------------------------------------------------------------------------------------
+Val Loss: 0.523083
+Val Acc: 0.769300
+Val Per Class Acc: tensor([0.2720, 0.9720, 0.3130, 0.7890, 0.5310, 0.9550, 0.9640, 0.9750, 0.9740,
+        0.9480])
+Poison Loss: 0.103028
+Poison Acc: 0.966000
+------------------------------------------------------------------------------------------
+Full log path: output_logs\PC01_H1_noniid_dirty_r300_s50_seed1_182339_console_output.txt
+Summary path: output_logs\PC01_H1_noniid_dirty_checkpoint_summary.txt
+==========================================================================================

@@ -1,0 +1,128 @@
+Console output will be saved to: output_logs\hyp4_defense_comparison_fmnist_r300_defrobustlr_aggravg_rlr4_clip0_noise0_base5_target7_cor1_pf0p5_cl0_cltype0_seed7_20260629_195928_console_output.txt
+DEFENSE_COMPARISON_RUN_START
+scenario=Hypothesis 4 - defense comparison
+defense_mode=robustlr
+defense_status=robustlr_enabled
+aggr=avg
+robustLR_threshold=4
+clip=0
+noise=0
+DEFENSE_COMPARISON_RUN_END
+======================================
+    Scenario: Hypothesis 4 - Defense comparison
+    Scenario Data: IID-ish fixed distribution
+    Dataset: fmnist
+    Global Rounds: 300
+    Aggregation Function: avg
+    Defense Mode: robustlr
+    Defense Status: robustlr_enabled
+    Number of agents: 10
+    Fraction of agents: 1
+    Class Per Agent: 10
+    Batch size: 256
+    Client_LR: 0.1
+    Server_LR: 1.0
+    Client_Momentum: 0.9
+    RobustLR_threshold: 4
+    Noise Ratio: 0
+    Clip: 0
+    Number of corrupt agents: 1
+    Base Class: 5
+    Target Class: 7
+    Poison Frac: 0.5
+    Seed: 7
+    Clean Label Attack: 0
+    Clean Label Type: 0
+    Clean Label Auto Pattern: 1
+    Verify Poisoning: 1
+    Verify Defense Comparison: 1
+======================================
+TensorBoard logs will be saved to: logs\hyp4_defense_comparison_fmnist_r300_defrobustlr_aggravg_rlr4_clip0_noise0_base5_target7_cor1_pf0p5_cl0_cltype0_seed7_20260629_195928
+  0%|          | 0.00/26.4M [00:00<?, ?B/s] 19%|#9        | 5.11M/26.4M [00:00<00:00, 51.1MB/s] 65%|######5   | 17.2M/26.4M [00:00<00:00, 89.1MB/s]100%|##########| 26.4M/26.4M [00:00<00:00, 92.6MB/s]
+  0%|          | 0.00/29.5k [00:00<?, ?B/s]100%|##########| 29.5k/29.5k [00:00<00:00, 2.49MB/s]
+  0%|          | 0.00/4.42M [00:00<?, ?B/s]100%|##########| 4.42M/4.42M [00:00<00:00, 56.4MB/s]
+  0%|          | 0.00/5.15k [00:00<?, ?B/s]100%|##########| 5.15k/5.15k [00:00<?, ?B/s]
+VERIFY_DEFENSE_COMPARISON_START
+scenario=Hypothesis 4 - defense comparison
+scenario_data=IID-ish fixed data distribution
+defense_mode=robustlr
+defense_status=robustlr_enabled
+aggr=avg
+robustLR_threshold=4
+clip=0
+noise=0
+num_agents=10
+class_per_agent=10
+n_classes=10
+shard_size=600
+slice_size=10
+corrupt_clients=[0]
+base_class=5
+target_class=7
+client=0 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=1 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=2 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=3 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=4 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=5 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=6 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=7 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=8 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=9 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+DEFENSE_COMPARISON_PROOF: data split is held fixed; defense_mode changes between runs.
+VERIFY_DEFENSE_COMPARISON_PASSED
+VERIFY_DEFENSE_COMPARISON_END
+VERIFY_POISONING_START
+context=poisoned_validation_eval
+agent_idx=-1
+attack_mode=dirty-label
+defense_mode=robustlr
+defense_status=robustlr_enabled
+force_dirty_label=True
+clean_label_requested=False
+clean_label_active=False
+clean_label_type=0
+pattern_type_requested=plus
+pattern_type_effective=plus
+source_class=5
+target_class=7
+poison_frac=1
+available_source_samples=1000
+poisoned_samples=1000
+labels_changed=1000
+expected_labels_changed=1000
+changed_pixels_first_sample=9
+label_verification_passed=True
+trigger_verification_passed=True
+VERIFY_POISONING_PASSED
+EVAL_ATTACK_PROOF: validation poison set uses base_class + trigger -> target_class to measure poison accuracy.
+DEFENSE_COMPARISON_POINT: this poisoned run is evaluated under the selected defense_mode.
+VERIFY_POISONING_END
+VERIFY_POISONING_START
+context=train
+agent_idx=0
+attack_mode=dirty-label
+defense_mode=robustlr
+defense_status=robustlr_enabled
+force_dirty_label=False
+clean_label_requested=False
+clean_label_active=False
+clean_label_type=0
+pattern_type_requested=plus
+pattern_type_effective=plus
+source_class=5
+target_class=7
+poison_frac=0.5
+available_source_samples=600
+poisoned_samples=300
+labels_changed=300
+expected_labels_changed=300
+changed_pixels_first_sample=9
+label_verification_passed=True
+trigger_verification_passed=True
+VERIFY_POISONING_PASSED
+DIRTY_LABEL_PROOF: labels_changed=poisoned_samples means base-class labels were changed to target-class labels.
+DEFENSE_COMPARISON_POINT: this poisoned run is evaluated under the selected defense_mode.
+VERIFY_POISONING_END
+  0%|          | 0/300 [00:00<?, ?it/s]C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\nn\modules\dropout.py:176: UserWarning: dropout2d: Received a 2-D input to dropout2d, which is deprecated and will result in an error in a future release. To retain the behavior and silence this warning, please use dropout instead. Note that dropout2d exists to provide channel-wise dropout on inputs with 2 spatial dimensions, a channel dimension, and an optional batch dimension (i.e. 3D or 4D inputs).
+  return F.dropout2d(input, self.p, self.training, self.inplace)

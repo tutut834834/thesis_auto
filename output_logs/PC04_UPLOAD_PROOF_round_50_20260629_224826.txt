@@ -1,0 +1,4 @@
+PC04 auto upload proof
+round=50
+time=20260629_224826
+log=output_logs\PC04_H2_stealth_dirty_r300_pf010_b5_t7_seed4_console_output.txt

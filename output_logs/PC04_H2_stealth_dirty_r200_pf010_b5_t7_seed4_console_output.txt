@@ -1,0 +1,152 @@
+Console output will be saved to: output_logs\hyp2_stealth_fmnist_r200_cpa10_base5_target7_cor1_pf0.1_rlr4_cl0_cltype0_seed4_20260629_190005_console_output.txt
+======================================
+    Scenario: Hypothesis 2 - Stealth dirty-label vs clean-label
+    Scenario Data: IID-ish / normal federated data
+    Dataset: fmnist
+    Global Rounds: 200
+    Aggregation Function: avg
+    Number of agents: 10
+    Fraction of agents: 1
+    Class Per Agent: 10
+    Batch size: 256
+    Client_LR: 0.1
+    Server_LR: 1.0
+    Client_Momentum: 0.9
+    RobustLR_threshold: 4
+    Noise Ratio: 0
+    Number of corrupt agents: 1
+    Base Class: 5
+    Target Class: 7
+    Poison Frac: 0.1
+    Clip: 0
+    Seed: 4
+    Clean Label Attack: 0
+    Clean Label Type: 0
+    Clean Label Auto Pattern: 1
+    Verify Poisoning: 1
+    Verify Stealth Data: 1
+======================================
+TensorBoard disabled on PC03 to prevent event-file crash.
+TensorBoard log_dir would have been: logs\hyp2_stealth_fmnist_r200_cpa10_base5_target7_cor1_pf0.1_rlr4_cl0_cltype0_seed4_20260629_190005
+VERIFY_STEALTH_DATA_START
+scenario=Hypothesis 2 - stealth dirty-label vs clean-label
+scenario_data=IID-ish / normal federated data
+num_agents=10
+class_per_agent=10
+n_classes=10
+shard_size=600
+slice_size=10
+corrupt_clients=[0]
+base_class=5
+target_class=7
+client=0 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=1 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=2 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=3 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=4 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=5 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=6 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=7 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=8 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+client=9 n_samples=6000 unique_classes=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] class_counts={0: 600, 1: 600, 2: 600, 3: 600, 4: 600, 5: 600, 6: 600, 7: 600, 8: 600, 9: 600}
+STEALTH_DATA_PROOF: class_per_agent=10 means this is the normal/IID-ish data scenario, not the non-IID scenario.
+STEALTH_METRIC_PROOF: compare dirty labels_changed against clean labels_changed=0.
+VERIFY_STEALTH_DATA_PASSED
+VERIFY_STEALTH_DATA_END
+VERIFY_POISONING_START
+context=poisoned_validation_eval
+agent_idx=-1
+attack_mode=dirty-label
+force_dirty_label=True
+clean_label_requested=False
+clean_label_active=False
+clean_label_type=0
+pattern_type_requested=plus
+pattern_type_effective=plus
+source_class=5
+target_class=7
+poison_frac=1
+available_source_samples=1000
+poisoned_samples=1000
+labels_changed=1000
+expected_labels_changed=1000
+changed_pixels_first_sample=9
+label_verification_passed=True
+trigger_verification_passed=True
+VERIFY_POISONING_PASSED
+EVAL_ATTACK_PROOF: validation poison set uses base_class + trigger -> target_class to measure poison accuracy.
+VERIFY_POISONING_END
+VERIFY_POISONING_START
+context=train
+agent_idx=0
+attack_mode=dirty-label
+force_dirty_label=False
+clean_label_requested=False
+clean_label_active=False
+clean_label_type=0
+pattern_type_requested=plus
+pattern_type_effective=plus
+source_class=5
+target_class=7
+poison_frac=0.1
+available_source_samples=600
+poisoned_samples=60
+labels_changed=60
+expected_labels_changed=60
+changed_pixels_first_sample=9
+label_verification_passed=True
+trigger_verification_passed=True
+VERIFY_POISONING_PASSED
+DIRTY_LABEL_PROOF: labels_changed=poisoned_samples means base-class labels were changed to target-class labels.
+STEALTH_COMPARISON_POINT: dirty-label is less stealthy at the data-label level because labels were changed.
+VERIFY_POISONING_END
+  0%|          | 0/200 [00:00<?, ?it/s]C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\nn\modules\dropout.py:176: UserWarning: dropout2d: Received a 2-D input to dropout2d, which is deprecated and will result in an error in a future release. To retain the behavior and silence this warning, please use dropout instead. Note that dropout2d exists to provide channel-wise dropout on inputs with 2 spatial dimensions, a channel dimension, and an optional batch dimension (i.e. 3D or 4D inputs).
+  return F.dropout2d(input, self.p, self.training, self.inplace)
+| Round: 1 |
+| Val_Loss/Val_Acc: 1.085 / 0.687 |
+| Val_Per_Class_Acc: tensor([0.8080, 0.9680, 0.0010, 0.7860, 0.0020, 0.9210, 0.6740, 0.9030, 0.8620,
+        0.9450]) |
+| Poison Loss/Poison Acc: 2.058 / 0.042 |
+STEALTH_METRICS_NOTE: compare labels_changed, Val_Acc, Val_Loss, and Poison Acc between dirty-label and clean-label txt logs.
+  0%|          | 1/200 [03:08<10:24:02, 188.15s/it]  0%|          | 1/200 [05:30<18:15:33, 330.32s/it]
+Traceback (most recent call last):
+  File "C:\Users\akiel\Downloads\project_5_scenario2_lowpoison_stealthpc4\project_5_scenario2_lowpoison_stealth\src_code\federated.py", line 200, in <module>
+    update = agents[agent_id].local_train(global_model, criterion)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\Downloads\project_5_scenario2_lowpoison_stealthpc4\project_5_scenario2_lowpoison_stealth\src_code\agent.py", line 40, in local_train
+    for _, (inputs, labels) in enumerate(self.train_loader):
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\dataloader.py", line 718, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\dataloader.py", line 778, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\_utils\fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\_utils\fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\akiel\Downloads\project_5_scenario2_lowpoison_stealthpc4\project_5_scenario2_lowpoison_stealth\src_code\utils.py", line 52, in __getitem__
+    inp, target = self.dataset[self.idxs[item]]
+                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torchvision\datasets\mnist.py", line 146, in __getitem__
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torchvision\transforms\transforms.py", line 137, in __call__
+    return F.to_tensor(pic)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\torchvision\transforms\functional.py", line 168, in to_tensor
+    img = torch.from_numpy(np.array(pic, mode_to_nptype.get(pic.mode, np.uint8), copy=True))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\PIL\Image.py", line 820, in __array_interface__
+    new["data"] = self.tobytes()
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\akiel\AppData\Roaming\Python\Python311\site-packages\PIL\Image.py", line 890, in tobytes
+    from . import ImageFile
+  File "<frozen importlib._bootstrap>", line 1207, in _handle_fromlist
+KeyboardInterrupt
+^C
